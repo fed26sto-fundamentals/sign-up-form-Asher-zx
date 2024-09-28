@@ -117,6 +117,13 @@ form {
   color: var(--main-whitebluebackground-color);
 }
 
+.intro {
+  grid-column: 1 / -1;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
 .formheader {
   grid-column: 1 / -1;
   letter-spacing: .1em;
@@ -142,5 +149,47 @@ span {
   letter-spacing: .05em;
   text-transform: uppercase;
   font-size: 16px;
-  transition: all 0.4s;
+  transition: 0.3 ease;
+  cursor: pointer;
+}
+
+.form_group input {
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in;
+  border: 1px solid var(--main-yellowbackground-color);
+  padding: 5px;
+  width: 100%;
+  background-color: var(--main-orangebackground-color);
+  color: white;
+}
+
+.form_group input.show {
+  opacity: 1;
+  height: 30px;
+}
+
+/* button decoration */
+
+.submmit_btn {
+  grid-column: 1 / -1;
+  background-color: var(--main-yellowbackground-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: .1em;
+  transition: all 0.5s ease-in;
+}
+
+.buttonsub_text {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-yellowbackground-color);
 }
