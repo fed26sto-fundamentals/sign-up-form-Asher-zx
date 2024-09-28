@@ -12,7 +12,7 @@
   --color-text: white;
 
   background-color: var(--main-lightbluebackground-color);
-  color: var(--color-text, yellow));
+  color: var(--color-text, yellow);
   
 }
 
